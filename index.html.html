@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/rober/Downloads/index_4.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rising Light — Spiritual Advisor &amp; Life Coach | Monroe, MI</title>
+<meta name="description" content="Spiritual advisor, life coach, and addiction recovery mentor serving Monroe, Michigan and surrounding areas. Guided by lived experience. Rising into your light.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Rising Light — Spiritual Advisor &amp; Life Coach _ Monroe, MI_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C8973A;
+    --gold-light: #E8C47A;
+    --gold-pale: #FDF6E8;
+    --deep: #1A1228;
+    --deep2: #251B35;
+    --mid: #3D2F52;
+    --lavender: #8B7BA8;
+    --sage: #7A9E8A;
+    --cream: #FAF6EF;
+    --text: #2C1F3E;
+    --muted: #6B5C80;
+    --white: #FFFFFF;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(26,18,40,0.95);
+    backdrop-filter: blur(8px);
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid rgba(200,151,58,0.3);
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--gold-light); letter-spacing: 0.04em;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-cta {
+    background: var(--gold); color: var(--deep);
+    padding: 0.5rem 1.2rem; border-radius: 2rem;
+    font-size: 0.82rem; font-weight: 500; letter-spacing: 0.06em;
+    text-decoration: none; text-transform: uppercase;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-light); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--gold-light); border-radius: 2px; transition: 0.3s; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(160deg, var(--deep) 0%, var(--deep2) 50%, #2B1E42 100%);
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 7rem 2rem 4rem;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(200,151,58,0.12) 0%, transparent 70%);
+  }
+  .stars {
+    position: absolute; inset: 0; pointer-events: none;
+  }
+  .star {
+    position: absolute; border-radius: 50%;
+    background: white; animation: twinkle 3s ease-in-out infinite;
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.4); }
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 760px; }
+  .hero-badge {
+    display: inline-block;
+    border: 1px solid rgba(200,151,58,0.5);
+    color: var(--gold-light); font-size: 0.78rem;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 0.4rem 1.2rem; border-radius: 2rem; margin-bottom: 2rem;
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    color: var(--white); font-weight: 500; line-height: 1.1;
+    margin-bottom: 0.5rem;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+  .hero h1 em { color: var(--gold-light); font-style: italic; }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    color: var(--lavender); font-style: italic; margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+  .hero-desc {
+    color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.75;
+    max-width: 560px; margin: 0 auto 2.5rem;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+  .hero-btns {
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.4s ease both;
+  }
+  .btn-primary {
+    background: var(--gold); color: var(--deep);
+    padding: 0.85rem 2.2rem; border-radius: 3rem;
+    font-weight: 500; font-size: 0.95rem; text-decoration: none;
+    letter-spacing: 0.04em; transition: all 0.2s;
+    box-shadow: 0 4px 20px rgba(200,151,58,0.35);
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.35); color: white;
+    padding: 0.85rem 2.2rem; border-radius: 3rem;
+    font-size: 0.95rem; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--gold-light); color: var(--gold-light); }
+  .scroll-hint {
+    position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+    color: rgba(255,255,255,0.3); font-size: 0.75rem; letter-spacing: 0.1em;
+    text-transform: uppercase; animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* SECTIONS SHARED */
+  section { padding: 5rem 2rem; }
+  .section-label {
+    font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.75rem; font-weight: 500;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem); font-weight: 500; line-height: 1.2;
+    color: var(--text); margin-bottom: 1rem;
+  }
+  .section-title em { color: var(--gold); font-style: italic; }
+  .section-intro {
+    color: var(--muted); line-height: 1.75; max-width: 580px; font-size: 1rem;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* ABOUT */
+  .about { background: var(--white); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; align-items: center; max-width: 1100px; margin: 0 auto;
+  }
+  .about-visual {
+    position: relative;
+  }
+  .about-card {
+    background: linear-gradient(145deg, var(--deep) 0%, var(--mid) 100%);
+    border-radius: 24px; padding: 3rem 2.5rem; text-align: center;
+    border: 1px solid rgba(200,151,58,0.25);
+    box-shadow: 0 20px 60px rgba(26,18,40,0.15);
+  }
+  .about-icon {
+    font-size: 4rem; margin-bottom: 1.5rem; display: block;
+    filter: drop-shadow(0 4px 12px rgba(200,151,58,0.4));
+  }
+  .about-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold-light); font-size: 1.6rem; margin-bottom: 0.75rem;
+  }
+  .about-card p { color: rgba(255,255,255,0.7); line-height: 1.7; font-size: 0.95rem; }
+  .about-tag {
+    display: inline-block; margin-top: 1.25rem;
+    background: rgba(200,151,58,0.15); border: 1px solid rgba(200,151,58,0.4);
+    color: var(--gold-light); padding: 0.3rem 1rem; border-radius: 2rem;
+    font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .about-text .section-intro { max-width: 100%; }
+  .about-quote {
+    margin-top: 2rem; padding: 1.5rem;
+    border-left: 3px solid var(--gold);
+    background: var(--gold-pale); border-radius: 0 12px 12px 0;
+  }
+  .about-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; color: var(--text); font-style: italic; line-height: 1.6;
+  }
+  .about-quote cite { display: block; margin-top: 0.5rem; color: var(--gold); font-size: 0.82rem; font-style: normal; letter-spacing: 0.06em; }
+
+  /* SERVICES */
+  .services { background: var(--cream); }
+  .services-header { text-align: center; max-width: 600px; margin: 0 auto 3.5rem; }
+  .services-header .section-intro { margin: 0 auto; }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem; max-width: 1100px; margin: 0 auto;
+  }
+  .service-card {
+    background: var(--white); border-radius: 20px; padding: 2rem;
+    border: 1px solid rgba(139,123,168,0.15);
+    transition: all 0.3s; position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--lavender));
+    transform: scaleX(0); transition: transform 0.3s; transform-origin: left;
+  }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(26,18,40,0.1); }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-icon { font-size: 2.2rem; margin-bottom: 1rem; display: block; }
+  .service-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--text); margin-bottom: 0.75rem;
+  }
+  .service-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.7; }
+
+  /* FOUNDATION */
+  .foundation {
+    background: linear-gradient(135deg, var(--deep) 0%, var(--deep2) 100%);
+    position: relative; overflow: hidden;
+  }
+  .foundation::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(122,158,138,0.15) 0%, transparent 70%);
+  }
+  .foundation-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+  .foundation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .foundation .section-label { color: var(--sage); }
+  .foundation .section-title { color: var(--white); }
+  .foundation .section-intro { color: rgba(255,255,255,0.65); }
+  .foundation-steps { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  .step {
+    display: flex; gap: 1rem; align-items: flex-start;
+  }
+  .step-num {
+    min-width: 36px; height: 36px; border-radius: 50%;
+    background: rgba(122,158,138,0.2); border: 1px solid rgba(122,158,138,0.4);
+    color: var(--sage); display: flex; align-items: center; justify-content: center;
+    font-size: 0.82rem; font-weight: 500; flex-shrink: 0;
+  }
+  .step-text h4 { color: var(--white); font-size: 0.95rem; font-weight: 500; margin-bottom: 0.2rem; }
+  .step-text p { color: rgba(255,255,255,0.55); font-size: 0.88rem; line-height: 1.6; }
+  .foundation-callout {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px; padding: 2.5rem; text-align: center;
+  }
+  .foundation-callout .big-icon { font-size: 3.5rem; display: block; margin-bottom: 1rem; }
+  .foundation-callout h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--sage); font-size: 1.8rem; margin-bottom: 1rem;
+  }
+  .foundation-callout p { color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 1.5rem; }
+  .btn-sage {
+    background: var(--sage); color: var(--deep);
+    padding: 0.75rem 2rem; border-radius: 3rem;
+    font-weight: 500; font-size: 0.9rem; text-decoration: none;
+    display: inline-block; transition: all 0.2s;
+  }
+  .btn-sage:hover { background: #9AB8A8; }
+
+  /* TESTIMONIALS */
+  .testimonials { background: var(--white); }
+  .testimonials-header { text-align: center; margin-bottom: 3rem; }
+  .testimonials-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; max-width: 1100px; margin: 0 auto;
+  }
+  .testimonial {
+    background: var(--cream); border-radius: 16px; padding: 2rem;
+    border: 1px solid rgba(139,123,168,0.12);
+  }
+  .testimonial-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem; font-style: italic; line-height: 1.65;
+    color: var(--text); margin-bottom: 1.25rem;
+  }
+  .testimonial-text::before { content: '\201C'; color: var(--gold); font-size: 1.5rem; }
+  .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+  .author-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--lavender), var(--mid));
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 0.9rem; font-weight: 500;
+  }
+  .author-name { font-weight: 500; font-size: 0.9rem; color: var(--text); }
+  .author-detail { font-size: 0.8rem; color: var(--muted); }
+  .stars-row { color: var(--gold); font-size: 0.85rem; margin-bottom: 0.25rem; }
+
+  /* LOCATION */
+  .location { background: var(--cream); }
+  .location-inner { max-width: 1100px; margin: 0 auto; }
+  .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .location-info { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+  .location-item { display: flex; gap: 1rem; align-items: flex-start; }
+  .location-item-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: var(--gold-pale); border: 1px solid rgba(200,151,58,0.25);
+    display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+  }
+  .location-item h4 { font-weight: 500; color: var(--text); margin-bottom: 0.2rem; }
+  .location-item p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+  .map-placeholder {
+    background: linear-gradient(145deg, var(--deep) 0%, var(--mid) 100%);
+    border-radius: 20px; padding: 3rem 2rem; text-align: center; color: white;
+    border: 1px solid rgba(200,151,58,0.2);
+  }
+  .map-placeholder .map-icon { font-size: 3rem; margin-bottom: 1rem; display: block; }
+  .map-placeholder h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .map-placeholder p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.6; }
+  .service-areas { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+  .area-tag {
+    background: rgba(200,151,58,0.15); border: 1px solid rgba(200,151,58,0.3);
+    color: var(--gold-light); padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.78rem;
+  }
+
+  /* CONTACT */
+  .contact {
+    background: linear-gradient(135deg, var(--deep2) 0%, var(--deep) 100%);
+  }
+  .contact-inner { max-width: 1100px; margin: 0 auto; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .contact .section-title { color: white; }
+  .contact .section-label { color: var(--gold); }
+  .contact .section-intro { color: rgba(255,255,255,0.6); }
+  .contact-form { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-group label { font-size: 0.82rem; color: rgba(255,255,255,0.6); letter-spacing: 0.06em; text-transform: uppercase; }
+  .form-group input, .form-group textarea, .form-group select {
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px; padding: 0.75rem 1rem; color: white;
+    font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+    outline: none; transition: border-color 0.2s; resize: vertical;
+  }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--gold);
+  }
+  .form-group select option { background: var(--deep); }
+  .form-group textarea { min-height: 120px; }
+  .form-submit {
+    background: var(--gold); color: var(--deep);
+    padding: 0.9rem 2.5rem; border-radius: 3rem; border: none;
+    font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 1rem;
+    cursor: pointer; transition: all 0.2s; align-self: flex-start;
+    letter-spacing: 0.03em;
+  }
+  .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .contact-right { padding-top: 1rem; }
+  .contact-card {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px; padding: 2rem; margin-bottom: 1.5rem;
+  }
+  .contact-card h4 { color: var(--gold-light); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-bottom: 1rem; }
+  .contact-detail { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; }
+  .contact-detail span:first-child { font-size: 1.1rem; }
+  .contact-detail a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.92rem; transition: color 0.2s; }
+  .contact-detail a:hover { color: var(--gold-light); }
+  .contact-detail p { color: rgba(255,255,255,0.7); font-size: 0.92rem; }
+
+  /* QR SECTION */
+  .qr-section {
+    background: var(--deep); border-top: 1px solid rgba(200,151,58,0.2);
+    padding: 4rem 2rem; text-align: center;
+  }
+  .qr-inner { max-width: 500px; margin: 0 auto; }
+  .qr-inner h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold-light); font-size: 1.8rem; margin-bottom: 0.5rem;
+  }
+  .qr-inner p { color: rgba(255,255,255,0.55); font-size: 0.9rem; margin-bottom: 2rem; }
+  #qrcode {
+    display: inline-block; background: white; padding: 1.25rem; border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0F0A1A; padding: 2.5rem 2rem; text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold-light); font-size: 1.3rem; margin-bottom: 0.5rem;
+  }
+  footer p { color: rgba(255,255,255,0.3); font-size: 0.82rem; }
+  footer a { color: rgba(200,151,58,0.7); text-decoration: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .about-grid, .foundation-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    section { padding: 4rem 1.5rem; }
+  }
+
+  /* ANIMATE ON SCROLL */
+  .reveal { opacity: 1; transform: translateY(0); transition: all 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* MOBILE MENU */
+  .mobile-menu {
+    position: fixed; inset: 0; background: var(--deep); z-index: 200;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 2rem; transform: translateX(100%); transition: transform 0.3s;
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu a { color: var(--white); text-decoration: none; font-size: 1.5rem;
+    font-family: 'Cormorant Garamond', serif; }
+  .mobile-menu a:hover { color: var(--gold-light); }
+  .mobile-close {
+    position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none;
+    color: white; font-size: 1.5rem; cursor: pointer;
+  }
+
+  /* Success message */
+  .form-success {
+    display: none; background: rgba(122,158,138,0.15); border: 1px solid var(--sage);
+    border-radius: 12px; padding: 1rem 1.5rem; color: var(--sage); text-align: center;
+    margin-top: 1rem;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Rising Light · Jonathan Roberts</div>
+  <ul class="nav-links">
+    <li><a href="file:///C:/Users/rober/Downloads/index_4.html#about">About</a></li>
+    <li><a href="file:///C:/Users/rober/Downloads/index_4.html#services">Services</a></li>
+    <li><a href="file:///C:/Users/rober/Downloads/index_4.html#foundation">Foundation</a></li>
+    <li><a href="file:///C:/Users/rober/Downloads/index_4.html#contact">Contact</a></li>
+  </ul>
+  <a href="file:///C:/Users/rober/Downloads/index_4.html#contact" class="nav-cta">Book a Session</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="file:///C:/Users/rober/Downloads/index_4.html#about" onclick="toggleMenu()">About</a>
+  <a href="file:///C:/Users/rober/Downloads/index_4.html#services" onclick="toggleMenu()">Services</a>
+  <a href="file:///C:/Users/rober/Downloads/index_4.html#foundation" onclick="toggleMenu()">Foundation</a>
+  <a href="file:///C:/Users/rober/Downloads/index_4.html#contact" onclick="toggleMenu()">Contact</a>
+  <a href="file:///C:/Users/rober/Downloads/index_4.html#contact" class="btn-primary" onclick="toggleMenu()">Book a Session</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="stars" id="stars"><div class="star" style="width: 0.800142px; height: 0.800142px; top: 18.2631%; left: 96.0051%; animation-delay: 3.93038s; animation-duration: 2.57845s;"></div><div class="star" style="width: 1.95029px; height: 1.95029px; top: 86.5168%; left: 19.0987%; animation-delay: 2.59153s; animation-duration: 2.20395s;"></div><div class="star" style="width: 1.36448px; height: 1.36448px; top: 80.7516%; left: 50.5545%; animation-delay: 3.04687s; animation-duration: 4.41593s;"></div><div class="star" style="width: 0.963854px; height: 0.963854px; top: 74.7768%; left: 61.9753%; animation-delay: 0.715924s; animation-duration: 2.36787s;"></div><div class="star" style="width: 0.856757px; height: 0.856757px; top: 54.1122%; left: 66.2757%; animation-delay: 3.73711s; animation-duration: 2.55982s;"></div><div class="star" style="width: 1.41196px; height: 1.41196px; top: 1.98692%; left: 45.5599%; animation-delay: 0.880447s; animation-duration: 2.78603s;"></div><div class="star" style="width: 1.12534px; height: 1.12534px; top: 19.7338%; left: 5.15019%; animation-delay: 3.3626s; animation-duration: 4.53218s;"></div><div class="star" style="width: 2.77249px; height: 2.77249px; top: 30.2688%; left: 81.1769%; animation-delay: 0.922696s; animation-duration: 3.99688s;"></div><div class="star" style="width: 2.73442px; height: 2.73442px; top: 44.2658%; left: 37.2911%; animation-delay: 1.80921s; animation-duration: 4.31733s;"></div><div class="star" style="width: 0.788948px; height: 0.788948px; top: 44.3134%; left: 7.13693%; animation-delay: 1.7441s; animation-duration: 4.50844s;"></div><div class="star" style="width: 1.99258px; height: 1.99258px; top: 68.706%; left: 48.3029%; animation-delay: 2.82518s; animation-duration: 2.31022s;"></div><div class="star" style="width: 1.66474px; height: 1.66474px; top: 73.3427%; left: 54.3264%; animation-delay: 1.1816s; animation-duration: 3.29094s;"></div><div class="star" style="width: 2.149px; height: 2.149px; top: 95.2098%; left: 4.34343%; animation-delay: 2.53571s; animation-duration: 2.33134s;"></div><div class="star" style="width: 1.04074px; height: 1.04074px; top: 40.8842%; left: 74.0963%; animation-delay: 1.13496s; animation-duration: 3.92012s;"></div><div class="star" style="width: 1.74471px; height: 1.74471px; top: 84.6453%; left: 90.6047%; animation-delay: 2.19747s; animation-duration: 2.74152s;"></div><div class="star" style="width: 1.95375px; height: 1.95375px; top: 46.6105%; left: 1.0501%; animation-delay: 3.19409s; animation-duration: 2.8659s;"></div><div class="star" style="width: 1.32885px; height: 1.32885px; top: 67.7832%; left: 53.8653%; animation-delay: 3.4767s; animation-duration: 2.03831s;"></div><div class="star" style="width: 2.17162px; height: 2.17162px; top: 17.2555%; left: 28.6879%; animation-delay: 2.38923s; animation-duration: 4.20167s;"></div><div class="star" style="width: 1.85584px; height: 1.85584px; top: 87.7885%; left: 7.89402%; animation-delay: 2.0042s; animation-duration: 2.63456s;"></div><div class="star" style="width: 1.95948px; height: 1.95948px; top: 32.1734%; left: 40.9347%; animation-delay: 3.85796s; animation-duration: 3.20649s;"></div><div class="star" style="width: 0.79453px; height: 0.79453px; top: 75.9561%; left: 45.7089%; animation-delay: 3.99099s; animation-duration: 2.86193s;"></div><div class="star" style="width: 1.61869px; height: 1.61869px; top: 22.9885%; left: 15.1538%; animation-delay: 1.66714s; animation-duration: 3.23472s;"></div><div class="star" style="width: 2.96706px; height: 2.96706px; top: 18.0089%; left: 13.7638%; animation-delay: 1.01874s; animation-duration: 3.54892s;"></div><div class="star" style="width: 1.65201px; height: 1.65201px; top: 44.032%; left: 11.2792%; animation-delay: 1.38189s; animation-duration: 4.60357s;"></div><div class="star" style="width: 1.00131px; height: 1.00131px; top: 15.0359%; left: 39.414%; animation-delay: 0.320882s; animation-duration: 3.04761s;"></div><div class="star" style="width: 2.23511px; height: 2.23511px; top: 53.9234%; left: 70.5425%; animation-delay: 1.53568s; animation-duration: 2.9007s;"></div><div class="star" style="width: 2.07064px; height: 2.07064px; top: 63.7726%; left: 75.4488%; animation-delay: 2.61767s; animation-duration: 3.79444s;"></div><div class="star" style="width: 1.31035px; height: 1.31035px; top: 75.5843%; left: 47.6904%; animation-delay: 0.254391s; animation-duration: 4.99576s;"></div><div class="star" style="width: 0.726756px; height: 0.726756px; top: 31.0507%; left: 22.7461%; animation-delay: 2.18906s; animation-duration: 2.75474s;"></div><div class="star" style="width: 2.74443px; height: 2.74443px; top: 67.2495%; left: 44.2778%; animation-delay: 1.1409s; animation-duration: 2.95377s;"></div><div class="star" style="width: 0.765883px; height: 0.765883px; top: 21.1515%; left: 48.54%; animation-delay: 2.16478s; animation-duration: 4.82045s;"></div><div class="star" style="width: 1.00822px; height: 1.00822px; top: 52.6062%; left: 13.3708%; animation-delay: 0.954672s; animation-duration: 2.70195s;"></div><div class="star" style="width: 1.20208px; height: 1.20208px; top: 89.715%; left: 66.3678%; animation-delay: 2.96886s; animation-duration: 4.11226s;"></div><div class="star" style="width: 1.19543px; height: 1.19543px; top: 65.9771%; left: 49.009%; animation-delay: 2.69437s; animation-duration: 4.5621s;"></div><div class="star" style="width: 2.09225px; height: 2.09225px; top: 20.4614%; left: 92.0134%; animation-delay: 3.517s; animation-duration: 4.6481s;"></div><div class="star" style="width: 2.72489px; height: 2.72489px; top: 46.05%; left: 55.8564%; animation-delay: 3.81542s; animation-duration: 2.15147s;"></div><div class="star" style="width: 2.09206px; height: 2.09206px; top: 41.9803%; left: 28.707%; animation-delay: 1.38612s; animation-duration: 2.94157s;"></div><div class="star" style="width: 0.622615px; height: 0.622615px; top: 24.1129%; left: 76.0437%; animation-delay: 1.32298s; animation-duration: 3.34158s;"></div><div class="star" style="width: 1.26184px; height: 1.26184px; top: 72.2334%; left: 67.2034%; animation-delay: 3.11146s; animation-duration: 2.41605s;"></div><div class="star" style="width: 1.87598px; height: 1.87598px; top: 85.6651%; left: 6.50726%; animation-delay: 3.6934s; animation-duration: 4.04671s;"></div><div class="star" style="width: 2.90772px; height: 2.90772px; top: 80.219%; left: 93.8642%; animation-delay: 2.95925s; animation-duration: 4.00767s;"></div><div class="star" style="width: 2.51622px; height: 2.51622px; top: 50.3847%; left: 60.5885%; animation-delay: 2.70778s; animation-duration: 4.57381s;"></div><div class="star" style="width: 1.62026px; height: 1.62026px; top: 16.9457%; left: 55.9402%; animation-delay: 2.22134s; animation-duration: 2.48769s;"></div><div class="star" style="width: 2.54412px; height: 2.54412px; top: 7.21045%; left: 38.4773%; animation-delay: 0.372286s; animation-duration: 3.7315s;"></div><div class="star" style="width: 2.79118px; height: 2.79118px; top: 18.2911%; left: 93.3553%; animation-delay: 1.98872s; animation-duration: 3.17099s;"></div><div class="star" style="width: 1.0207px; height: 1.0207px; top: 57.4427%; left: 31.1477%; animation-delay: 2.59062s; animation-duration: 2.26016s;"></div><div class="star" style="width: 1.23886px; height: 1.23886px; top: 87.7248%; left: 3.84325%; animation-delay: 3.67923s; animation-duration: 3.20479s;"></div><div class="star" style="width: 0.98676px; height: 0.98676px; top: 26.6511%; left: 49.6917%; animation-delay: 2.66188s; animation-duration: 3.87723s;"></div><div class="star" style="width: 2.75622px; height: 2.75622px; top: 47.8666%; left: 5.10324%; animation-delay: 0.435173s; animation-duration: 4.05142s;"></div><div class="star" style="width: 2.75359px; height: 2.75359px; top: 7.57377%; left: 75.2183%; animation-delay: 0.896721s; animation-duration: 3.44858s;"></div><div class="star" style="width: 2.58377px; height: 2.58377px; top: 37.6354%; left: 25.7081%; animation-delay: 1.54149s; animation-duration: 3.84743s;"></div><div class="star" style="width: 0.659622px; height: 0.659622px; top: 97.8553%; left: 79.7022%; animation-delay: 3.39751s; animation-duration: 3.58313s;"></div><div class="star" style="width: 2.42967px; height: 2.42967px; top: 44.4495%; left: 21.1177%; animation-delay: 1.1788s; animation-duration: 4.28161s;"></div><div class="star" style="width: 2.33305px; height: 2.33305px; top: 73.8001%; left: 67.195%; animation-delay: 3.57127s; animation-duration: 2.2405s;"></div><div class="star" style="width: 1.86995px; height: 1.86995px; top: 20.6786%; left: 74.1358%; animation-delay: 1.06102s; animation-duration: 3.52043s;"></div><div class="star" style="width: 1.77122px; height: 1.77122px; top: 19.3001%; left: 52.3781%; animation-delay: 0.934202s; animation-duration: 2.01813s;"></div><div class="star" style="width: 1.11121px; height: 1.11121px; top: 67.6342%; left: 86.7756%; animation-delay: 2.14863s; animation-duration: 2.94084s;"></div><div class="star" style="width: 2.1495px; height: 2.1495px; top: 80.0841%; left: 78.331%; animation-delay: 3.10666s; animation-duration: 2.74775s;"></div><div class="star" style="width: 1.57575px; height: 1.57575px; top: 11.6346%; left: 48.3481%; animation-delay: 3.21068s; animation-duration: 4.16631s;"></div><div class="star" style="width: 2.71847px; height: 2.71847px; top: 41.4939%; left: 53.7302%; animation-delay: 0.924778s; animation-duration: 2.69539s;"></div><div class="star" style="width: 0.629267px; height: 0.629267px; top: 81.0025%; left: 96.0605%; animation-delay: 3.94927s; animation-duration: 3.5578s;"></div><div class="star" style="width: 0.975656px; height: 0.975656px; top: 16.9955%; left: 73.5083%; animation-delay: 3.45237s; animation-duration: 2.22692s;"></div><div class="star" style="width: 0.761139px; height: 0.761139px; top: 45.9894%; left: 6.74671%; animation-delay: 3.57124s; animation-duration: 4.84114s;"></div><div class="star" style="width: 0.524939px; height: 0.524939px; top: 3.0556%; left: 74.4036%; animation-delay: 0.449565s; animation-duration: 4.32609s;"></div><div class="star" style="width: 0.614938px; height: 0.614938px; top: 98.0656%; left: 21.4493%; animation-delay: 1.95999s; animation-duration: 3.11733s;"></div><div class="star" style="width: 2.18499px; height: 2.18499px; top: 24.3723%; left: 49.2051%; animation-delay: 0.142201s; animation-duration: 3.60964s;"></div><div class="star" style="width: 0.78295px; height: 0.78295px; top: 69.1891%; left: 29.5991%; animation-delay: 2.88534s; animation-duration: 2.88621s;"></div><div class="star" style="width: 1.68653px; height: 1.68653px; top: 33.5122%; left: 17.2479%; animation-delay: 0.939902s; animation-duration: 2.3201s;"></div><div class="star" style="width: 2.22178px; height: 2.22178px; top: 54.6485%; left: 11.8287%; animation-delay: 3.69892s; animation-duration: 2.61549s;"></div><div class="star" style="width: 0.71241px; height: 0.71241px; top: 25.2303%; left: 24.1429%; animation-delay: 0.399562s; animation-duration: 2.34628s;"></div><div class="star" style="width: 2.37018px; height: 2.37018px; top: 31.5093%; left: 73.769%; animation-delay: 0.954963s; animation-duration: 4.21969s;"></div><div class="star" style="width: 2.00447px; height: 2.00447px; top: 77.8736%; left: 69.894%; animation-delay: 1.17103s; animation-duration: 2.67491s;"></div><div class="star" style="width: 0.845911px; height: 0.845911px; top: 80.7229%; left: 99.6363%; animation-delay: 2.09134s; animation-duration: 3.35049s;"></div><div class="star" style="width: 1.32771px; height: 1.32771px; top: 74.1997%; left: 27.9735%; animation-delay: 1.35739s; animation-duration: 3.34626s;"></div><div class="star" style="width: 1.41095px; height: 1.41095px; top: 83.3064%; left: 49.2074%; animation-delay: 2.90074s; animation-duration: 3.02914s;"></div><div class="star" style="width: 1.37101px; height: 1.37101px; top: 26.0581%; left: 60.0937%; animation-delay: 3.87935s; animation-duration: 3.31018s;"></div><div class="star" style="width: 1.2369px; height: 1.2369px; top: 93.7685%; left: 87.4459%; animation-delay: 2.81334s; animation-duration: 4.81209s;"></div><div class="star" style="width: 2.19417px; height: 2.19417px; top: 87.3555%; left: 48.9439%; animation-delay: 0.0664614s; animation-duration: 4.76228s;"></div><div class="star" style="width: 1.44018px; height: 1.44018px; top: 35.4213%; left: 55.9911%; animation-delay: 2.10784s; animation-duration: 3.80244s;"></div><div class="star" style="width: 1.17987px; height: 1.17987px; top: 22.4257%; left: 58.9432%; animation-delay: 3.58107s; animation-duration: 3.02477s;"></div></div>
+  <div class="hero-inner">
+    <div class="hero-badge">Monroe, Michigan · Serving SE Michigan</div>
+    <h1>Your Light Has <em>Always</em><br>Been There</h1>
+    <p class="hero-sub">Spiritual Advisor · Life Coach · Recovery Mentor</p>
+    <p class="hero-desc">You don't have to walk the hard road alone. As someone who has traveled through darkness and found the light on the other side, I'm here to guide you — with heart, lived experience, and genuine hope.</p>
+    <div class="hero-btns">
+      <a href="file:///C:/Users/rober/Downloads/index_4.html#contact" class="btn-primary">Book a Free Consultation</a>
+      <a href="file:///C:/Users/rober/Downloads/index_4.html#about" class="btn-outline">My Story</a>
+    </div>
+  </div>
+  <div class="scroll-hint">↓ &nbsp; scroll to explore</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal visible">
+      <div class="about-card">
+        <span class="about-icon">🌅</span>
+        <h3>Born from the Journey</h3>
+        <p>My path has taken me through the depths of addiction and out the other side — clean, clear, and called to serve. Every scar is a credential. Every hard year earned wisdom I now share with you.</p>
+        <span class="about-tag">Years of sobriety &amp; counting</span>
+      </div>
+    </div>
+    <div class="about-text reveal visible">
+      <p class="section-label">My Story</p>
+      <h2 class="section-title">Guided by <em>Lived Experience</em></h2>
+      <p class="section-intro">I know what it feels like to be lost — to think there is no way through. I also know what it feels like to find your footing, to breathe again, to rediscover who you truly are beneath the pain.</p>
+      <p class="section-intro" style="margin-top:1rem;">Based in Monroe, Michigan, I serve as a spiritual advisor, life coach, and recovery mentor for individuals throughout Southeast Michigan who are ready to reclaim their lives. My approach blends spiritual depth, practical coaching, and compassionate accountability — tailored to wherever you are right now.</p>
+      <div class="about-quote">
+        <p>"The wound is the place where the light enters you."</p>
+        <cite>— Rumi</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header reveal visible">
+    <p class="section-label">What I Offer</p>
+    <h2 class="section-title">Sessions Designed for <em>Your Journey</em></h2>
+    <p class="section-intro">Every person's path is unique. My services meet you where you are — whether you're in crisis, in recovery, seeking clarity, or simply ready to grow.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal visible">
+      <span class="service-icon">🕊️</span>
+      <h3>Spiritual Guidance</h3>
+      <p>Reconnect with your inner wisdom, explore your spiritual nature, and build a practice that grounds and sustains you through life's storms. All paths and beliefs are welcomed here.</p>
+    </div>
+    <div class="service-card reveal visible">
+      <span class="service-icon">🧭</span>
+      <h3>Life Coaching</h3>
+      <p>Set clear intentions, break limiting patterns, and create a roadmap for the life you want. We work together on goals, mindset, relationships, purpose, and daily habits.</p>
+    </div>
+    <div class="service-card reveal visible">
+      <span class="service-icon">💚</span>
+      <h3>Addiction Recovery Support</h3>
+      <p>Peer-based mentorship from someone who has been there. Accountability, encouragement, and real talk — because recovery is a journey, not a destination. Clean is possible.</p>
+    </div>
+    <div class="service-card reveal visible">
+      <span class="service-icon">👪</span>
+      <h3>Family &amp; Loved Ones</h3>
+      <p>Addiction and struggle affect the whole family. I offer support and guidance for loved ones navigating how to help without enabling — how to love without losing yourself.</p>
+    </div>
+    <div class="service-card reveal visible">
+      <span class="service-icon">🌱</span>
+      <h3>Group Sessions</h3>
+      <p>There is power in shared experience. Small group sessions create community, reduce isolation, and remind us that none of us is alone on this path.</p>
+    </div>
+    <div class="service-card reveal visible">
+      <span class="service-icon">📞</span>
+      <h3>Crisis Check-Ins</h3>
+      <p>Sometimes you need someone right now. I offer check-in availability for clients in active recovery who need a grounding voice in difficult moments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDATION -->
+<section class="foundation" id="foundation">
+  <div class="foundation-inner">
+    <div class="foundation-grid">
+      <div class="reveal visible">
+        <p class="section-label">Coming Soon</p>
+        <h2 class="section-title">The <em>Rising Light</em> Foundation</h2>
+        <p class="section-intro">A dream in progress — a nonprofit foundation dedicated to providing recovery resources, mentorship, and community support to those struggling with drug addiction in Monroe and surrounding Southeast Michigan.</p>
+        <div class="foundation-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <h4>Peer Mentorship Program</h4>
+              <p>Matching those in early recovery with mentors who have walked the same road.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <h4>Community Resource Hub</h4>
+              <p>Connecting people to local services, treatment options, and sober living support.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <h4>Family Education &amp; Support</h4>
+              <p>Workshops and resources for the families and loved ones of those in recovery.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-text">
+              <h4>Certification &amp; Training</h4>
+              <p>Working toward certified credentials to formalize and expand the mission.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal visible">
+        <div class="foundation-callout">
+          <span class="big-icon">🌿</span>
+          <h3>Recovery is Possible.<br>For Everyone.</h3>
+          <p>The Rising Light Foundation is being built on the belief that no one should have to face addiction alone — and that community, compassion, and lived experience are among the most powerful tools in healing.</p>
+          <p style="margin-bottom:0.5rem;color:rgba(255,255,255,0.5);font-size:0.85rem;">Want to be notified when the foundation launches?</p>
+          <a href="file:///C:/Users/rober/Downloads/index_4.html#contact" class="btn-sage">Stay Informed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-header reveal visible">
+    <p class="section-label">Community Voices</p>
+    <h2 class="section-title">What <em>Healing</em> Sounds Like</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial reveal visible">
+      <div class="stars-row">★★★★★</div>
+      <p class="testimonial-text">I had tried everything — programs, therapy, even moving away. What made the difference was someone who truly understood. Not just professionally, but from the inside. I'm 14 months clean now.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JR</div>
+        <div>
+          <p class="author-name">J.R.</p>
+          <p class="author-detail">Monroe, MI · Recovery Client</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial reveal visible">
+      <div class="stars-row">★★★★★</div>
+      <p class="testimonial-text">As a parent watching my son struggle, I felt completely lost. The guidance I received helped me find a way to support him without losing my own sanity. I finally feel like I have tools.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">ML</div>
+        <div>
+          <p class="author-name">M.L.</p>
+          <p class="author-detail">Temperance, MI · Family Client</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial reveal visible">
+      <div class="stars-row">★★★★★</div>
+      <p class="testimonial-text">The spiritual coaching sessions changed how I see myself. For the first time in years I feel like I have a purpose beyond just surviving. I look forward to each session and to life again.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">TW</div>
+        <div>
+          <p class="author-name">T.W.</p>
+          <p class="author-detail">Toledo area · Life Coaching Client</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="location-inner">
+    <div class="location-grid">
+      <div class="reveal visible">
+        <p class="section-label">Where I Serve</p>
+        <h2 class="section-title">Monroe, Michigan<br>&amp; <em>Surrounding Areas</em></h2>
+        <p class="section-intro">Based in Monroe (48161), I serve clients in-person and virtually throughout Southeast Michigan and Northwest Ohio.</p>
+        <div class="location-info">
+          <div class="location-item">
+            <div class="location-item-icon">📍</div>
+            <div>
+              <h4>Primary Location</h4>
+              <p>Monroe, Michigan 48161<br>In-person sessions by appointment</p>
+            </div>
+          </div>
+          <div class="location-item">
+            <div class="location-item-icon">💻</div>
+            <div>
+              <h4>Virtual Sessions Available</h4>
+              <p>Video and phone sessions available for clients anywhere — distance is no barrier to healing.</p>
+            </div>
+          </div>
+          <div class="location-item">
+            <div class="location-item-icon">🕐</div>
+            <div>
+              <h4>Availability</h4>
+              <p>Flexible scheduling including evenings and weekends. Reach out to discuss what works for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal visible">
+        <div class="map-placeholder">
+          <span class="map-icon">🗺️</span>
+          <h3>Southeast Michigan</h3>
+          <p>Serving communities across Monroe County and beyond — including Toledo, OH for virtual and select in-person sessions.</p>
+          <div class="service-areas">
+            <span class="area-tag">Monroe</span>
+            <span class="area-tag">Temperance</span>
+            <span class="area-tag">Bedford Twp</span>
+            <span class="area-tag">Dundee</span>
+            <span class="area-tag">Milan</span>
+            <span class="area-tag">Flat Rock</span>
+            <span class="area-tag">Carleton</span>
+            <span class="area-tag">Downriver</span>
+            <span class="area-tag">Toledo, OH</span>
+            <span class="area-tag">+ Virtual Everywhere</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-grid">
+      <div class="reveal visible">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Take the First Step</h2>
+        <p class="section-intro">The bravest thing you can do is reach out. There is no judgment here — only compassion and a genuine desire to help you find your way forward.</p>
+        <form class="contact-form" action="https://formspree.io/f/xzdknzpo" method="POST" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Your first name" required="">
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Your last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required="">
+          </div>
+          <div class="form-group">
+            <label>Phone (optional)</label>
+            <input type="tel" placeholder="(555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label>I'm interested in</label>
+            <select>
+              <option value="">Select a service...</option>
+              <option>Spiritual Guidance</option>
+              <option>Life Coaching</option>
+              <option>Addiction Recovery Support</option>
+              <option>Family / Loved Ones Support</option>
+              <option>Group Sessions</option>
+              <option>Foundation / Volunteer</option>
+              <option>Just exploring — not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea placeholder="Share what&#39;s on your heart. What brings you here? What do you hope for?"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message ✨</button>
+          <div class="form-success" id="formSuccess">
+            Thank you — your message was sent. I'll be in touch soon. 💛
+          </div>
+        </form>
+      </div>
+      <div class="contact-right reveal visible">
+        <div class="contact-card">
+          <h4>Reach Out Directly</h4>
+          <div class="contact-detail">
+            <span>📍</span>
+            <p>Monroe, Michigan 48161</p>
+          </div>
+          <div class="contact-detail">
+            <span>📧</span>
+            <a href="mailto:risinglightcoaching@gmail.com">risinglightcoaching@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <span>📞</span>
+            <a href="tel:+17344103490">(734) 410-3490</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h4>A Note on Confidentiality</h4>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.7;">Everything you share with me stays between us. Your privacy is sacred, and your courage in reaching out deserves to be honored. You are safe here.</p>
+        </div>
+        <div class="contact-card">
+          <h4>In Crisis Right Now?</h4>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.7;margin-bottom:0.75rem;">If you or someone you love is in immediate crisis, please reach out to SAMHSA's National Helpline:</p>
+          <a href="tel:18006624357" style="color:var(--sage);font-weight:500;font-size:1rem;text-decoration:none;">📞 1-800-662-4357</a>
+          <p style="color:rgba(255,255,255,0.4);font-size:0.8rem;margin-top:0.4rem;">Free, confidential, 24/7</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QR CODE SECTION -->
+<section class="qr-section" id="qr">
+  <div class="qr-inner">
+    <h3>Scan to Visit This Site</h3>
+    <p>Share this QR code on flyers, cards, or anywhere you want people to find you.</p>
+    <div id="qrcode" title="https://jonathanleeroberts2023-collab.github.io/rising-light"><canvas width="200" height="200" style="display: none;"></canvas><img src="data:image/png;base64,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" style="display: block;"></div>
+    <p style="margin-top:1rem;font-size:0.78rem;color:rgba(255,255,255,0.3);">risinglightcoaching · Jonathan Roberts · Monroe, MI</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Rising Light · Jonathan Roberts</div>
+  <p>Jonathan Roberts · Spiritual Advisor · Life Coach · Recovery Mentor · Monroe, Michigan</p>
+  <p style="margin-top:0.5rem;">© <span id="year">2026</span> Rising Light Coaching. Made with 💛 by Jonathan Roberts.</p>
+  <p style="margin-top:0.5rem;"><a href="file:///C:/Users/rober/Downloads/index_4.html#home">Back to top ↑</a></p>
+</footer>
+
+<!-- QR CODE LIBRARY -->
+<script src="./Rising Light — Spiritual Advisor &amp; Life Coach _ Monroe, MI_files/qrcode.min.js.download"></script>
+
+<script>
+// ---- STARS ----
+(function() {
+  const container = document.getElementById('stars');
+  for (let i = 0; i < 80; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2.5 + 0.5;
+    s.style.cssText = `
+      width:${size}px; height:${size}px;
+      top:${Math.random()*100}%; left:${Math.random()*100}%;
+      animation-delay:${Math.random()*4}s;
+      animation-duration:${2+Math.random()*3}s;
+    `;
+    container.appendChild(s);
+  }
+})();
+
+// ---- SCROLL REVEAL ----
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ---- MOBILE MENU ----
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ---- FOOTER YEAR ----
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---- FORM SUBMIT ----
+function handleSubmit(e) {
+  e.preventDefault();
+  const success = document.getElementById('formSuccess');
+  success.style.display = 'block';
+  e.target.reset();
+  setTimeout(() => { success.style.display = 'none'; }, 6000);
+}
+
+// ---- QR CODE ----
+// EDIT THIS URL once your site is live!
+const SITE_URL = 'https://jonathanleeroberts2023-collab.github.io/rising-light';
+new QRCode(document.getElementById('qrcode'), {
+  text: 'https://jonathanleeroberts2023-collab.github.io/rising-light',
+  width: 200,
+  height: 200,
+  colorDark: '#1a0a2e',
+  colorLight: '#ffffff',
+  correctLevel: QRCode.CorrectLevel.H
+});
+</script>
+
+
+</body></html>
